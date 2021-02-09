@@ -7,7 +7,7 @@ public:
         for (int i = stringLen - 1; i >= 0; i--)
             for (int j = i; j <= stringLen - 1; j++){
                 if (s[i] == s[j]){
-                   if (j - i < 3 || (j - 1 >= 0 && i + 1 < stringLen && p[i+1][j-1])){
+                   if (j - i < 3 || p[i+1][j-1]){
                         p[i][j] = true;
                         if (j - i + 1 > len){
                             len = j - i + 1;
