@@ -6,6 +6,8 @@ class Node:
         self.neighbors = neighbors if neighbors is not None else []
 """
 
+# 注意self啊！！写python函数的时候
+
 class Solution:
     def cloneGraph(self, node: 'Node') -> 'Node':
         if not node:
