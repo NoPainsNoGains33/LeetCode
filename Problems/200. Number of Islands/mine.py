@@ -1,3 +1,7 @@
+# 空间复杂度 我这里的是O(n * m)
+# 如果没有visited数组 空间复杂度取决于队列的长度 也就是O(min (n, m))
+# 原因是你最长最长入队列min (n, m)个数字
+# https://imgur.com/gallery/M58OKvB
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
         if not grid:
