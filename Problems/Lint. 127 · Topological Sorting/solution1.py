@@ -13,8 +13,9 @@ class Solution:
     def topSort(self, graph):
         # write your code here
         node_to_indegree = self.getIndegree(graph)
-        start_nodes = [node for node in graph if node_to_indegree[node] == 0]
-        # start_nodes = [node for node, indegree in node_to_indegree if indegree == 0]
+        # start_nodes = [node for node in graph if node_to_indegree[node] == 0]
+        # 这两种初始化都可以
+        start_nodes = [node for node, indegree in node_to_indegree.items() if indegree == 0]
         queue = collections.deque(start_nodes)
 
         order = []
