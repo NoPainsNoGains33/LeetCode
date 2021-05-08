@@ -5,6 +5,9 @@
 #         self.left = None
 #         self.right = None
 
+
+# 最坏的情况 我们需要遍历所有的节点 所以O(N)
+# DFS 会占用空间 所有空间也是 O(N)
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         lowest_common_ancestor = self.findlowestCommonAncestor(root, p, q)
