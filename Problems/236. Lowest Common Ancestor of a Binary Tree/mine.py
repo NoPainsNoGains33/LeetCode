@@ -27,10 +27,10 @@ class Solution:
         if left and right:
             return current
         
-        if left and not right:
+        if left:
             return left
         
-        if not left and right:
+        if right:
             return right
         
         return None
